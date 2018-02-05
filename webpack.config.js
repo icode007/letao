@@ -53,9 +53,10 @@ module.exports = {
       }
     ]
   },
-  // devServer: {
-  //   contentBase: path.join(__dirname, 'dist')
-  // },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    inline: true
+  },
   plugins: [
     //打包成独立通用模块
     new webpack.optimize.CommonsChunkPlugin({
